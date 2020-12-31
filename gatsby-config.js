@@ -9,7 +9,7 @@ require("dotenv").config({
 
 module.exports = {
   /* Your site config here */
-  siteMetaData: {
+  siteMetadata: {
     title: "Dev Blog",
     description: "blog site created with Gatsby",
     author: "ndj"
