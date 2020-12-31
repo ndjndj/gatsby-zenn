@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 export default function Post({ pageContext }) {
     const { title, updatedAt, image } = pageContext.post;
-    const body = pageContext.post.childMarkdownRemark.html;
+    const body = pageContext.post.body.childMarkdownRemark.html;
 
     return (
         <Layout>
