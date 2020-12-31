@@ -1,9 +1,7 @@
 import React from 'react';
 import '../styles/post-link.css';
 
-const RANDOM_IMG = 'https://source.unsplash.com/collection/175083/640x360';
-
-export default function PostLink() {
+export default function PostLink({post}) {
     const { title, updateAt, image } = post;
     const description = post.description.description;
 

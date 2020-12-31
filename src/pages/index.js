@@ -4,19 +4,19 @@ import Hero from '../components/hero';
 import PostLink from '../components/post-link';
 import { graphql } from 'gatsby';
 
-export default function Home(data) {
+export default function Home({data}) {
   return (
     <Layout>
       <Hero />
       {
         data.allContentfulPost.edges.map(
-          (edge) => <PostLink key={edge.node.slug} post={edge.node} />
+          edge => <PostLink key={edge.node.slug} post={edge.node} />
       )}
     </Layout>
   );
 }
 
-export const query = `
+export const query = graphql`
 query allContentfulPost {
   allContentfulPost {
     edges {
