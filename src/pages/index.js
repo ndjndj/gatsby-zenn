@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import Hero from '../components/hero';
 import PostLink from '../components/post-link';
-import SEO from '../components/SEO';
+import SEO from '../components/seo';
 import { graphql } from 'gatsby';
 
 export default function Home({data}) {
